@@ -49,11 +49,9 @@ main{
     padding: 40px 0 0 20px;
     color: #380B58;
     display: flex;
-    background-color: aliceblue;
 }
 .about table{
     width: max-content;
-    background-color: fuchsia;
 }
 .about table th{
     padding: 10px;
@@ -93,23 +91,72 @@ main{
     color: #380B58;
 }
 
-.submain{
-    background-color: red;
-}
 .submain {
-    background-color: antiquewhite;
+
     display: inline;
 }
 
 .gov_plan{
-    background-color: red;
     margin: 10px 0 0 20px;
 }
 .gov_plan form{
     margin-bottom: 10px;
 }
 
-input#plan:checked ~ .gov_plan p {
-    font-size: 2em;
+.gov_plan p{
+    display: none;
+    padding: 10px;
+}
+.gov_plan{
+    padding: 10px;
+}
 
+.gov_plan label{
+    padding: 10px;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: url(caret-right-fill.svg);
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: url(caret-down-fill.svg);
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.gov_plan input#plan:checked + label[for="plan"] ~ p#text{
+    display: block;
+    color: #380B58;
+}
+.gov_plan input#plan2:checked + label[for="plan2"] ~ p#text2{
+    display: block;
+    color: #380B58;
+}
+.gov_plan input#plan3:checked + label[for="plan3"] ~ p#text3{
+    display: block;
+    color: #380B58;
+}
+.gov_plan input#plan4:checked + label[for="plan4"] ~ p#text4{
+    display: block;
+    color: #380B58;
+}
+.gov_plan input#plan5:checked + label[for="plan5"] ~ p#text5{
+    display: block;
+    color: #380B58;
 }
