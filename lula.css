@@ -48,10 +48,12 @@ main{
     margin: auto;
     padding: 40px 0 0 20px;
     color: #380B58;
+    font-size: 'open sans';
     display: flex;
 }
 .about table{
     width: max-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about table th{
     padding: 10px;
@@ -92,29 +94,43 @@ main{
 }
 
 .submain {
-
     display: inline;
 }
 
 .gov_plan{
     margin: 10px 0 0 20px;
 }
+
+.gov_plan h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #380B58;
+    font-size: 'open sans';
+}
+
 .gov_plan form{
-    margin-bottom: 10px;
+    margin:20px 0;
+    font-size: 'open sans';
 }
 
 .gov_plan p{
     display: none;
-    padding: 10px;
-}
-.gov_plan{
-    padding: 10px;
+    margin: 10px 0;
+    font-size: 'open sans';
+   
 }
 
 .gov_plan label{
     padding: 10px;
 }
+
+input[type='radio']{
+    user-select: none;
+    visibility: hidden;
+}
 input[type='radio']:after {
+    display: block;
     width: 15px;
     height: 15px;
     top: -2px;
@@ -125,6 +141,7 @@ input[type='radio']:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
+    transition: 1s ease-in all;
 }
 
 input[type='radio']:checked:after {
@@ -138,6 +155,7 @@ input[type='radio']:checked:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
+    transition: 1s ease-in all;
 }
 
 .gov_plan input#plan:checked + label[for="plan"] ~ p#text{
@@ -159,4 +177,32 @@ input[type='radio']:checked:after {
 .gov_plan input#plan5:checked + label[for="plan5"] ~ p#text5{
     display: block;
     color: #380B58;
+}
+
+.principais_noticias{
+    display: flex;
+    flex-direction: column;
+}
+
+.principais_noticias h3{
+    margin: 10px 0;
+    color: red;
+}
+
+.principais_noticias img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.principais_noticias{
+    margin: 10px 0 0 20px;
+}
+
+.principais_noticias li{
+    display: inline-block;
+    width: 300px;
+    font-size: 0.8em;
+    line-height: 1.3;
+    text-transform: capitalize;
 }
