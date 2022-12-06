@@ -235,3 +235,47 @@ input[type='radio']:checked:after {
     color: red;
     font-weight: 600;
 }
+@media screen and (max-width:960px) {
+
+    #logo h1{
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    main{
+        width: 100%;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+    .principais_noticias img{
+        width: 40vw;
+        height: 15vh;
+    }
+    .principais_noticias li{
+        width: 40vw;
+    }
+    .subtext{
+        margin: 15px 0 0 0;
+    }
+    .gov_plan{
+        margin: 0;
+    }
+    .subtext p, .gov_plan p{
+        padding-right: 20px;
+        text-align: justify;
+    }
+    .about{
+        width: max-content;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .subtext{
+        margin: 5px 0 0 0;
+    }
+    .principais_noticias{
+        margin: 25px 0 0 0;
+    }
+
+    
+}

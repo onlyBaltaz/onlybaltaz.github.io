@@ -187,9 +187,6 @@ a{
 }
 
 @media screen and (max-width:959px) {
-    body{
-        background-color: red;
-    } 
     
     #populares{
         margin: auto;
